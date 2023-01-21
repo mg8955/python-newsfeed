@@ -27,7 +27,7 @@ def login():
   if session.get('loggedIn') is None:
     return render_template('login.html')
 
-  return redirect('/dashboard')
+  return redirect('login.html')
 
 @bp.route('/post/<id>')
 def single(id):
